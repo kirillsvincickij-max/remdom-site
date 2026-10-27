@@ -8,7 +8,7 @@
   <title>РемДом — ремонт квартир без лишних хлопот</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -140,10 +140,10 @@
           <div class="request-contact"><span class="contact-icon" aria-hidden="true">↗</span><div><span>Предпочитаете написать?</span><p>Добавьте сюда рабочий телефон или ссылку на мессенджер перед публикацией сайта.</p></div></div>
         </div>
         <form class="request-form" id="request-form" novalidate>
-          <div class="form-field"><label for="name">Имя</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться?" required minlength="2" maxlength="80"><span class="field-error" id="name-error"></span></div>
-          <div class="form-field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required minlength="7" maxlength="30"><span class="field-error" id="phone-error"></span></div>
+          <div class="form-field"><label for="name">Имя</label><input id="name" name="name" type="text" aria-describedby="name-error" autocomplete="name" placeholder="Как к вам обращаться?" required minlength="2" maxlength="80"><span class="field-error" id="name-error"></span></div>
+          <div class="form-field"><label for="phone">Телефон</label><input id="phone" name="phone" type="tel" aria-describedby="phone-error" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required minlength="7" maxlength="30"><span class="field-error" id="phone-error"></span></div>
           <div class="form-field"><label for="details">Что нужно сделать?</label><textarea id="details" name="details" rows="4" maxlength="1200" placeholder="Например, обновить отделку в двухкомнатной квартире"></textarea><span class="field-hint">Можно заполнить позже — это необязательное поле.</span></div>
-          <label class="consent"><input id="consent" name="consent" type="checkbox" required><span>Я понимаю, что это демонстрационная форма: введённые данные не отправляются. <small>Перед реальным запуском подключите приём заявок и добавьте ссылку на политику конфиденциальности.</small></span></label>
+          <label class="consent"><input id="consent" name="consent" type="checkbox" aria-describedby="consent-error" required><span>Я понимаю, что это демонстрационная форма: введённые данные не отправляются. <small>Перед реальным запуском подключите приём заявок и добавьте ссылку на политику конфиденциальности.</small></span></label>
           <span class="field-error consent-error" id="consent-error"></span>
           <button class="button button-accent form-submit" type="submit">Проверить заявку <span aria-hidden="true">↗</span></button>
           <p class="form-status" id="form-status" role="status" aria-live="polite">Демонстрационный режим: отправка пока не подключена.</p>
